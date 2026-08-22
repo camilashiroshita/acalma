@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ACALMA</title>
+</head>
+<body>
+    <header>
+
+        <h1>ACALMA</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="#">Meus pedidos</a>
+            <a href="#">Cupons</a>
+            <a href="#">Minha conta</a>
+            <a href="#">Carrinho</a>
+        </nav>
+
+    </header>
+
+    <main class="catalogo">
+
+        <div class="catalogo-titulo">
+            <h2>Nossos produtos</h2>
+            <p>Encontre chás e acessórios para deixar seus momentos mais leves.</p>
+        </div>
+
+        <div class="catalogo-filtros">
+            <button type="button" class="filtro ativo" data-filtro="todos">
+                Todos
+            </button>
+
+            <button type="button" class="filtro" data-filtro="chas">
+                Chás
+            </button>
+
+            <button type="button" class="filtro" data-filtro="infusores">
+                Infusores
+            </button>
+
+            <button type="button" class="filtro" data-filtro="chaleiras">
+                Chaleiras
+            </button>
+        </div>
+        
+        <div class="grade-produtos">
+
+            <article class="produto-card" data-categoria="chas">
+
+                <img
+                    src="images/cha-camomila.png"
+                    alt="Sachê de chá de camomila"
+                >
+
+                <div class="produto-informacoes">
+                    <span class="produto-categoria">Chás</span>
+
+                    <h3>Chá de Camomila</h3>
+
+                    <p class="produto-descricao">
+                        Chá suave e aromático para momentos de tranquilidade.
+                    </p>
+
+                    <p class="produto-preco">R$ 18,90</p>
+
+                    <button type="button" class="produto-botao">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="produto-card" data-categoria="chas">
+
+                <img
+                    src="images/cha-hibisco.png"
+                    alt="Sachê de chá de hibisco"
+                >
+
+                <div class="produto-informacoes">
+                    <span class="produto-categoria">Chás</span>
+
+                    <h3>Chá de Hibisco</h3>
+
+                    <p class="produto-descricao">
+                        Chá de sabor marcante e aroma delicadamente frutado.
+                    </p>
+
+                    <p class="produto-preco">R$ 21,90</p>
+
+                    <button type="button" class="produto-botao">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="produto-card" data-categoria="infusores">
+
+                <img
+                    src="images/infusor-inox.png"
+                    alt="Infusor de chá em aço inox"
+                >
+
+                <div class="produto-informacoes">
+                    <span class="produto-categoria">Infusores</span>
+
+                    <h3>Infusor de Inox</h3>
+
+                    <p class="produto-descricao">
+                        Infusor reutilizável e prático para preparar chás em folhas.
+                    </p>
+
+                    <p class="produto-preco">R$ 29,90</p>
+
+                    <button type="button" class="produto-botao">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="produto-card" data-categoria="infusores">
+
+                <img
+                    src="images/infusor-folha.png"
+                    alt="Infusor de chá verde em formato de folha"
+                >
+
+                <div class="produto-informacoes">
+                    <span class="produto-categoria">Infusores</span>
+
+                    <h3>Infusor Folha</h3>
+
+                    <p class="produto-descricao">
+                        Infusor de silicone com formato delicado de folha.
+                    </p>
+
+                    <p class="produto-preco">R$ 24,90</p>
+
+                    <button type="button" class="produto-botao">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+
+            <div class="footer-marca">
+                <h2>ACALMA</h2>
+                <p>Chás e acessórios para tornar sua rotina mais leve.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Navegação</h3>
+                <a href="#">Início</a>
+                <a href="#">Produtos</a>
+                <a href="#">Meus pedidos</a>
+                <a href="#">Minha conta</a>
+            </div>
+
+            <div class="footer-atendimento">
+                <h3>Atendimento</h3>
+                <p>Segunda a sexta-feira</p>
+                <p>Das 9h às 18h</p>
+            </div>
+
+        </div>
+
+        <div class="footer-final">
+            <p>&copy; 2026 ACALMA — Todos os direitos reservados.</p>
+        </div>
+    </footer>  
+
+    <script src="js/script.js"></script>
+</body>
+</html>
