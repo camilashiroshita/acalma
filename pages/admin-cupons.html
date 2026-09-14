@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupons | ACALMA ADM</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1 class="site-brand"><a class="site-brand__link" href="admin-dashbord.html" aria-label="ACALMA — painel administrativo"><img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024"></a><span class="site-brand__admin">ADM</span></h1><nav class="admin-nav"><a href="admin-clientes.html">Clientes</a><a href="admin-pedidos.html">Pedidos</a><a href="admin-trocas.html">Trocas</a><a href="admin-produtos.html">Produtos</a><a href="admin-estoque.html">Estoque</a><a href="admin-cupons.html" aria-current="page">Cupons</a><a href="admin-dashbord.html">Dashboard</a><a href="chatbot.html">Chatbot</a><a href="../index.html">Sair</a></nav></header>
+<main class="pagina-admin">
+    <section class="admin-titulo"><span class="eyebrow">Promoções</span><h2>Gerenciamento de cupons</h2><p>Cadastre, consulte, altere, ative ou inative cupons promocionais.</p></section>
+    <section class="admin-toolbar coupon-admin-toolbar"><label class="admin-campo admin-busca-flex">Pesquisar<input id="buscaCupomAdmin" type="search" placeholder="Código do cupom"></label><label class="admin-campo">Status<select id="filtroStatusCupom"><option value="todos">Todos</option><option value="ativo">Ativos</option><option value="inativo">Inativos</option></select></label><button class="admin-botao-filtro" id="novoCupom" type="button">+ Novo cupom</button></section>
+    <section class="admin-card"><div class="tabela-responsiva"><table class="admin-tabela"><thead><tr><th>Código</th><th>Tipo</th><th>Valor</th><th>Compra mínima</th><th>Validade</th><th>Uso</th><th>Status</th><th>Ações</th></tr></thead><tbody id="tabelaCuponsAdmin"></tbody></table></div><p class="resultado-contagem" id="contagemCupons"></p></section>
+</main>
+<dialog class="modal-admin" id="modalCupom"><form method="dialog" id="formCupom"><div class="modal-topo"><div><span class="eyebrow">Cupom promocional</span><h2 id="tituloModalCupom">Novo cupom</h2></div><button type="button" class="modal-fechar" data-close-coupon aria-label="Fechar">×</button></div><input type="hidden" id="cupomOriginal"><div class="form-grid"><label>Código<input id="cupomCodigo" maxlength="20" pattern="[A-Za-z0-9-]+" required></label><label>Tipo de desconto<select id="cupomModo" required><option value="percent">Percentual (%)</option><option value="fixed">Valor fixo (R$)</option></select></label><label>Valor<input id="cupomValor" type="number" min="0.01" step="0.01" required></label><label>Compra mínima<input id="cupomMinimo" type="number" min="0" step="0.01" value="0" required></label><label>Validade<input id="cupomValidade" type="date" required></label><label>Limite total de usos<input id="cupomLimite" type="number" min="1" step="1" placeholder="Sem limite"></label></div><div class="modal-acoes"><button type="button" data-close-coupon class="botao-secundario">Cancelar</button><button type="submit" value="default" class="admin-botao-filtro">Salvar cupom</button></div></form></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../js/admin-cupons.js"></script>
+<a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+</body>
+</html>

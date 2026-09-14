@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Minha conta | ACALMA</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="site-brand">
+            <a class="site-brand__link" href="../index.html" aria-label="ACALMA — página inicial">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+        </h1>
+
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="meus-pedidos.html">Meus pedidos</a>
+            <a href="cupons.html">Cupons</a>
+            <a href="minha-conta.html">Minha conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="cadastro.html">Cadastre-se</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-conta">
+
+        <section class="conta-titulo">
+
+            <h2>Minha conta</h2>
+
+            <p>
+                Consulte e gerencie seus dados pessoais, endereços e cartões.
+            </p>
+
+        </section>
+
+
+        <section class="conta-grade">
+
+
+            <!-- DADOS PESSOAIS -->
+
+            <section class="conta-card conta-card-dados">
+
+                <div class="conta-card-topo">
+
+                    <div>
+                        <span class="conta-icone">01</span>
+                        <h3>Dados pessoais</h3>
+                    </div>
+
+                    <button type="button" class="conta-botao-link">
+                        Alterar dados
+                    </button>
+
+                </div>
+
+
+                <div class="dados-cliente">
+
+                    <div class="dado-linha">
+
+                        <span>Nome completo</span>
+
+                        <strong>
+                            Camila Shiroshita
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dado-linha">
+
+                        <span>E-mail</span>
+
+                        <strong>
+                            camila@email.com
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dado-linha">
+
+                        <span>Telefone</span>
+
+                        <strong>
+                            (16) 99999-9999
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dado-linha">
+
+                        <span>CPF</span>
+
+                        <strong>
+                            123.***.***-00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dado-linha">
+
+                        <span>Data de nascimento</span>
+
+                        <strong>
+                            15/04/2000
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- STATUS DA CONTA -->
+
+            <aside class="conta-card conta-status">
+
+                <div class="conta-card-topo">
+
+                    <div>
+                        <span class="conta-icone">02</span>
+                        <h3>Status da conta</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="status-conta-ativo">
+
+                    <span class="status-bolinha"></span>
+
+                    <div>
+
+                        <strong>Conta ativa</strong>
+
+                        <p>
+                            Seu cadastro está ativo e disponível para compras.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="botao-inativar"
+                >
+                    Inativar minha conta
+                </button>
+
+            </aside>
+
+
+
+            <!-- ENDEREÇOS -->
+
+            <section class="conta-card conta-card-largo">
+
+                <div class="conta-card-topo">
+
+                    <div>
+                        <span class="conta-icone">03</span>
+                        <h3>Meus endereços</h3>
+                    </div>
+
+                    <button type="button" class="conta-botao-link">
+                        + Novo endereço
+                    </button>
+
+                </div>
+
+
+                <div class="enderecos-grade">
+
+
+                    <article class="conta-endereco">
+
+                        <div class="endereco-identificacao">
+
+                            <div>
+
+                                <strong>Casa</strong>
+
+                                <span class="endereco-principal">
+                                    Principal
+                                </span>
+
+                            </div>
+
+                            <button type="button">
+                                Editar
+                            </button>
+
+                        </div>
+
+
+                        <p>
+                            Rua das Flores, 125
+                        </p>
+
+                        <p>
+                            Jardim Primavera
+                        </p>
+
+                        <p>
+                            São Carlos/SP — CEP 13560-000
+                        </p>
+
+                    </article>
+
+
+                    <article class="conta-endereco">
+
+                        <div class="endereco-identificacao">
+
+                            <strong>Trabalho</strong>
+
+                            <button type="button">
+                                Editar
+                            </button>
+
+                        </div>
+
+
+                        <p>
+                            Avenida Central, 880
+                        </p>
+
+                        <p>
+                            Centro
+                        </p>
+
+                        <p>
+                            São Carlos/SP — CEP 13560-120
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- CARTÕES -->
+
+            <section class="conta-card conta-card-largo">
+
+                <div class="conta-card-topo">
+
+                    <div>
+                        <span class="conta-icone">04</span>
+                        <h3>Meus cartões</h3>
+                    </div>
+
+                    <button type="button" class="conta-botao-link">
+                        + Novo cartão
+                    </button>
+
+                </div>
+
+
+                <div class="cartoes-grade">
+
+
+                    <article class="conta-cartao">
+
+                        <div class="cartao-cabecalho">
+
+                            <span class="conta-bandeira">
+                                VISA
+                            </span>
+
+                            <button type="button">
+                                Editar
+                            </button>
+
+                        </div>
+
+
+                        <strong>
+                            •••• •••• •••• 4587
+                        </strong>
+
+                        <p>
+                            Camila Shiroshita
+                        </p>
+
+                        <span>
+                            Validade 08/29
+                        </span>
+
+                    </article>
+
+
+                    <article class="conta-cartao">
+
+                        <div class="cartao-cabecalho">
+
+                            <span class="conta-bandeira">
+                                MASTER
+                            </span>
+
+                            <button type="button">
+                                Editar
+                            </button>
+
+                        </div>
+
+
+                        <strong>
+                            •••• •••• •••• 7812
+                        </strong>
+
+                        <p>
+                            Camila Shiroshita
+                        </p>
+
+                        <span>
+                            Validade 11/28
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div class="footer-marca">
+
+                <h2>ACALMA</h2>
+
+                <p>
+                    Chás e acessórios para tornar sua rotina mais leve.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Navegação</h3>
+
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="meus-pedidos.html">Meus pedidos</a>
+                <a href="minha-conta.html">Minha conta</a>
+
+            </div>
+
+
+            <div class="footer-atendimento">
+
+                <h3>Atendimento</h3>
+
+                <p>Segunda a sexta-feira</p>
+                <p>Das 9h às 18h</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-final">
+
+            <p>
+                &copy; 2026 ACALMA — Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+    <script src="../js/cart-badge.js"></script>
+</body>
+
+</html>

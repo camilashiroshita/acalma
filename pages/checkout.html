@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Finalizar compra | ACALMA</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="site-brand">
+            <a class="site-brand__link" href="../index.html" aria-label="ACALMA — página inicial">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+        </h1>
+
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="meus-pedidos.html">Meus pedidos</a>
+            <a href="cupons.html">Cupons</a>
+            <a href="minha-conta.html">Minha conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="cadastro.html">Cadastre-se</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-checkout">
+
+        <section class="checkout-titulo">
+
+            <h2>Finalizar compra</h2>
+
+            <p>
+                Confira os dados da entrega e escolha a forma de pagamento.
+            </p>
+
+        </section>
+
+
+        <section class="checkout-conteudo">
+
+            <div class="checkout-coluna-principal">
+
+
+                <!-- ENDEREÇO -->
+
+                <section class="checkout-bloco">
+
+                    <div class="checkout-bloco-topo">
+
+                        <div>
+                            <span class="checkout-etapa">1</span>
+                            <h3>Endereço de entrega</h3>
+                        </div>
+
+                        <button type="button" class="botao-link">
+                            + Novo endereço
+                        </button>
+
+                    </div>
+
+
+                    <label class="endereco-card endereco-selecionado">
+
+                        <input
+                            type="radio"
+                            name="endereco"
+                            checked
+                        >
+
+                        <div>
+
+                            <strong>Casa</strong>
+
+                            <p>
+                                Rua das Flores, 125
+                            </p>
+
+                            <p>
+                                Jardim Primavera — São Carlos/SP
+                            </p>
+
+                            <p>
+                                CEP 13560-000
+                            </p>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="endereco-card">
+
+                        <input
+                            type="radio"
+                            name="endereco"
+                        >
+
+                        <div>
+
+                            <strong>Trabalho</strong>
+
+                            <p>
+                                Avenida Central, 880
+                            </p>
+
+                            <p>
+                                Centro — São Carlos/SP
+                            </p>
+
+                            <p>
+                                CEP 13560-120
+                            </p>
+
+                        </div>
+
+                    </label>
+
+                </section>
+
+
+
+                <!-- CUPOM -->
+
+                <section class="checkout-bloco">
+
+                    <div class="checkout-bloco-topo">
+
+                        <div>
+                            <span class="checkout-etapa">2</span>
+                            <h3>Cupons</h3>
+                        </div>
+
+                    </div>
+
+
+                    <p class="checkout-texto-apoio">
+                        Utilize um cupom promocional ou cupom de troca.
+                    </p>
+
+
+                    <div class="cupom-area">
+
+                        <input
+                            type="text"
+                            placeholder="Digite o código do cupom"
+                        >
+
+                        <button
+                            type="button"
+                            class="botao-aplicar"
+                        >
+                            Aplicar
+                        </button>
+
+                    </div>
+
+
+                    <div class="cupom-disponivel">
+
+                        <div>
+
+                            <strong>ACALMA10</strong>
+
+                            <span>
+                                Cupom promocional
+                            </span>
+
+                        </div>
+
+                        <p>
+                            10% de desconto
+                        </p>
+
+                        <button type="button">
+                            Usar
+                        </button>
+
+                    </div>
+
+
+                    <div class="cupom-disponivel">
+
+                        <div>
+
+                            <strong>TROCA25</strong>
+
+                            <span>
+                                Cupom de troca
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Crédito de R$ 25,00
+                        </p>
+
+                        <button type="button">
+                            Usar
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- PAGAMENTO -->
+
+                <section class="checkout-bloco">
+
+                    <div class="checkout-bloco-topo">
+
+                        <div>
+                            <span class="checkout-etapa">3</span>
+                            <h3>Pagamento</h3>
+                        </div>
+
+                        <button type="button" class="botao-link">
+                            + Novo cartão
+                        </button>
+
+                    </div>
+
+
+                    <p class="checkout-texto-apoio">
+                        Selecione um ou mais cartões para realizar o pagamento.
+                    </p>
+
+
+                    <label class="cartao-card cartao-selecionado">
+
+                        <input
+                            type="checkbox"
+                            checked
+                        >
+
+                        <div class="cartao-info">
+
+                            <span class="cartao-bandeira">
+                                VISA
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    •••• •••• •••• 4587
+                                </strong>
+
+                                <p>
+                                    Camila Shiroshita
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="cartao-valor">
+
+                            <label>
+                                Valor neste cartão
+                            </label>
+
+                            <input
+                                type="text"
+                                value="R$ 40,00"
+                            >
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="cartao-card">
+
+                        <input
+                            type="checkbox"
+                        >
+
+                        <div class="cartao-info">
+
+                            <span class="cartao-bandeira">
+                                MASTER
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    •••• •••• •••• 7812
+                                </strong>
+
+                                <p>
+                                    Camila Shiroshita
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="cartao-valor">
+
+                            <label>
+                                Valor neste cartão
+                            </label>
+
+                            <input
+                                type="text"
+                                placeholder="R$ 26,33"
+                            >
+
+                        </div>
+
+                    </label>
+
+
+                    <div class="pagamento-observacao">
+
+                        <strong>Pagamento combinado</strong>
+
+                        <p>
+                            Você pode dividir o valor entre vários cartões e complementar com cupons.
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- RESUMO -->
+
+            <aside class="checkout-resumo checkout-resumo-prototipo">
+
+                <h3>Resumo do pedido</h3>
+
+
+                <div class="checkout-produto-resumo">
+
+                    <div>
+
+                        <strong>
+                            Chá de Hibisco
+                        </strong>
+
+                        <span>
+                            Quantidade: 2
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        R$ 43,80
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-produto-resumo">
+
+                    <div>
+
+                        <strong>
+                            Infusor Inox
+                        </strong>
+
+                        <span>
+                            Quantidade: 1
+                        </span>
+
+                    </div>
+
+                    <strong>
+                        R$ 29,90
+                    </strong>
+
+                </div>
+
+
+                <div class="checkout-resumo-linha">
+
+                    <span>Subtotal</span>
+
+                    <span>
+                        R$ 73,70
+                    </span>
+
+                </div>
+
+
+                <div class="checkout-resumo-linha">
+
+                    <span>Frete</span>
+
+                    <span>
+                        Grátis
+                    </span>
+
+                </div>
+
+
+                <div class="checkout-resumo-linha desconto">
+
+                    <span>Cupom ACALMA10</span>
+
+                    <span>
+                        - R$ 7,37
+                    </span>
+
+                </div>
+
+
+                <div class="checkout-resumo-total">
+
+                    <span>Total</span>
+
+                    <strong>
+                        R$ 66,33
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="checkout-finalizar"
+                >
+                    Confirmar pedido
+                </button>
+
+
+                <p class="checkout-seguranca">
+                    Pagamento seguro e protegido.
+                </p>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div class="footer-marca">
+
+                <h2>ACALMA</h2>
+
+                <p>
+                    Chás e acessórios para tornar sua rotina mais leve.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Navegação</h3>
+
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="meus-pedidos.html">Meus pedidos</a>
+                <a href="minha-conta.html">Minha conta</a>
+
+            </div>
+
+
+            <div class="footer-atendimento">
+
+                <h3>Atendimento</h3>
+
+                <p>Segunda a sexta-feira</p>
+                <p>Das 9h às 18h</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-final">
+
+            <p>
+                &copy; 2026 ACALMA — Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+    <script src="../js/cart-badge.js"></script>
+</body>
+
+</html>

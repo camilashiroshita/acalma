@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | ACALMA ADM</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="site-brand">
+            <a class="site-brand__link" href="admin-dashbord.html" aria-label="ACALMA — painel administrativo">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+            <span class="site-brand__admin">ADM</span>
+        </h1>
+
+        <nav>
+            <a href="admin-clientes.html">Clientes</a>
+            <a href="admin-pedidos.html">Pedidos</a>
+            <a href="admin-trocas.html">Trocas</a>
+            <a href="admin-produtos.html">Produtos</a>
+            <a href="admin-estoque.html">Estoque</a>
+            <a href="admin-cupons.html">Cupons</a>
+            <a href="admin-dashbord.html" aria-current="page">Dashboard</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="../index.html">Sair</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-admin">
+
+        <section class="admin-titulo">
+
+            <h2>Dashboard administrativo</h2>
+
+            <p>
+                Acompanhe os principais indicadores de vendas,
+                clientes e pedidos da Acalma.
+            </p>
+
+        </section>
+
+
+        <!-- FILTRO POR PERÍODO -->
+
+        <section class="dashboard-filtros">
+
+            <div class="admin-campo">
+
+                <label for="dataInicio">
+                    Data inicial
+                </label>
+
+                <input
+                    type="date"
+                    id="dataInicio"
+                    value="2026-01-01"
+                >
+
+            </div>
+
+
+            <div class="admin-campo">
+
+                <label for="dataFim">
+                    Data final
+                </label>
+
+                <input
+                    type="date"
+                    id="dataFim"
+                    value="2026-08-31"
+                >
+
+            </div>
+
+
+            <button
+                type="button"
+                class="admin-botao-filtro"
+                id="aplicarAnalise"
+            >
+                Aplicar período
+            </button>
+
+            <button type="button" class="botao-secundario" id="exportarAnalise">Exportar CSV</button>
+
+        </section>
+
+
+        <!-- INDICADORES -->
+
+        <section class="dashboard-indicadores">
+
+            <article class="dashboard-card-indicador">
+
+                <span>
+                    Pedidos realizados
+                </span>
+
+                <strong>
+                    28
+                </strong>
+
+                <p>
+                    No período selecionado
+                </p>
+
+            </article>
+
+
+            <article class="dashboard-card-indicador">
+
+                <span>
+                    Faturamento
+                </span>
+
+                <strong>
+                    R$ 1.486,30
+                </strong>
+
+                <p>
+                    Total em vendas
+                </p>
+
+            </article>
+
+
+            <article class="dashboard-card-indicador">
+
+                <span>
+                    Clientes ativos
+                </span>
+
+                <strong id="totalClientesAtivos">
+                    0
+                </strong>
+
+                <p>
+                    Cadastros disponíveis
+                </p>
+
+            </article>
+
+
+            <article class="dashboard-card-indicador">
+
+                <span>
+                    Trocas solicitadas
+                </span>
+
+                <strong>
+                    3
+                </strong>
+
+                <p>
+                    No período selecionado
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- GRÁFICO PRINCIPAL -->
+
+        <section class="dashboard-grade">
+
+            <section class="dashboard-card dashboard-grafico-principal">
+
+                <div class="dashboard-card-topo">
+
+                    <div>
+
+                        <h3>
+                            Vendas por período
+                        </h3>
+
+                        <p>
+                            Evolução mensal por categoria aprovada.
+                        </p>
+
+                    </div>
+
+                    <span class="dashboard-legenda">
+                        <label><input type="checkbox" class="categoriaGrafico" value="Chás" checked> Chás</label>
+                        <label><input type="checkbox" class="categoriaGrafico" value="Infusores" checked> Infusores</label>
+                    </span>
+
+                </div>
+
+
+                <div class="grafico-linhas-wrap" id="graficoVendas" aria-label="Gráfico de linhas de vendas por categoria">
+
+                    <div class="grafico-coluna">
+
+                        <span class="barra-valor">
+                            R$ 120
+                        </span>
+
+                        <div
+                            class="barra"
+                            style="height: 85px;"
+                        ></div>
+
+                        <span>
+                            05/08
+                        </span>
+
+                    </div>
+
+
+                    <div class="grafico-coluna">
+
+                        <span class="barra-valor">
+                            R$ 210
+                        </span>
+
+                        <div
+                            class="barra"
+                            style="height: 145px;"
+                        ></div>
+
+                        <span>
+                            09/08
+                        </span>
+
+                    </div>
+
+
+                    <div class="grafico-coluna">
+
+                        <span class="barra-valor">
+                            R$ 180
+                        </span>
+
+                        <div
+                            class="barra"
+                            style="height: 125px;"
+                        ></div>
+
+                        <span>
+                            13/08
+                        </span>
+
+                    </div>
+
+
+                    <div class="grafico-coluna">
+
+                        <span class="barra-valor">
+                            R$ 295
+                        </span>
+
+                        <div
+                            class="barra"
+                            style="height: 190px;"
+                        ></div>
+
+                        <span>
+                            17/08
+                        </span>
+
+                    </div>
+
+
+                    <div class="grafico-coluna">
+
+                        <span class="barra-valor">
+                            R$ 240
+                        </span>
+
+                        <div
+                            class="barra"
+                            style="height: 160px;"
+                        ></div>
+
+                        <span>
+                            20/08
+                        </span>
+
+                    </div>
+
+
+                    <div class="grafico-coluna">
+
+                        <span class="barra-valor">
+                            R$ 441
+                        </span>
+
+                        <div
+                            class="barra"
+                            style="height: 235px;"
+                        ></div>
+
+                        <span>
+                            24/08
+                        </span>
+
+                    </div>
+
+                </div>
+                <div class="grafico-legenda" id="legendaGrafico"></div>
+
+            </section>
+
+
+
+            <!-- PEDIDOS POR STATUS -->
+
+            <aside class="dashboard-card">
+
+                <div class="dashboard-card-topo">
+
+                    <div>
+
+                        <h3>
+                            Pedidos por status
+                        </h3>
+
+                        <p>
+                            Distribuição atual.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="status-dashboard-lista">
+
+                    <div>
+
+                        <span>
+                            EM ABERTO
+                        </span>
+
+                        <strong>
+                            4
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            EM PROCESSAMENTO
+                        </span>
+
+                        <strong>
+                            5
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            APROVADA
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            EM TRANSPORTE
+                        </span>
+
+                        <strong>
+                            6
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ENTREGUE
+                        </span>
+
+                        <strong>
+                            10
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- PRODUTOS MAIS VENDIDOS -->
+
+            <section class="dashboard-card dashboard-produtos">
+
+                <div class="dashboard-card-topo">
+
+                    <div>
+
+                        <h3>
+                            Produtos mais vendidos
+                        </h3>
+
+                        <p>
+                            Quantidade vendida no período.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-produto-item">
+
+                    <div>
+
+                        <span class="dashboard-posicao">
+                            1
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Chá de Camomila
+                            </strong>
+
+                            <p>
+                                Categoria: Chás
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <strong>
+                        18 unidades
+                    </strong>
+
+                </div>
+
+
+                <div class="dashboard-produto-item">
+
+                    <div>
+
+                        <span class="dashboard-posicao">
+                            2
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Chá de Hibisco
+                            </strong>
+
+                            <p>
+                                Categoria: Chás
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <strong>
+                        14 unidades
+                    </strong>
+
+                </div>
+
+
+                <div class="dashboard-produto-item">
+
+                    <div>
+
+                        <span class="dashboard-posicao">
+                            3
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Infusor Inox
+                            </strong>
+
+                            <p>
+                                Categoria: Infusores
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <strong>
+                        9 unidades
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- TROCAS -->
+
+            <aside class="dashboard-card">
+
+                <div class="dashboard-card-topo">
+
+                    <div>
+
+                        <h3>
+                            Situação das trocas
+                        </h3>
+
+                        <p>
+                            Resumo do fluxo de troca.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="status-dashboard-lista">
+
+                    <div>
+
+                        <span>
+                            TROCA SOLICITADA
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ITEM ENVIADO
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ITEM RECEBIDO
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            TROCA PROCESSADA
+                        </span>
+
+                        <strong>
+                            2
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div class="footer-marca">
+
+                <h2>ACALMA ADM</h2>
+
+                <p>
+                    Área administrativa do sistema.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Administração</h3>
+
+                <a href="admin-dashbord.html">Dashboard</a>
+                <a href="admin-produtos.html">Produtos</a>
+                <a href="admin-estoque.html">Estoque</a>
+                <a href="admin-clientes.html">Clientes</a>
+                <a href="admin-pedidos.html">Pedidos</a>
+
+            </div>
+
+
+            <div class="footer-atendimento">
+
+                <h3>Sistema</h3>
+
+                <p>
+                    Ambiente administrativo
+                </p>
+
+                <p>
+                    Acesso restrito
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-final">
+
+            <p>
+                &copy; 2026 ACALMA — Administração.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/dashboard.js"></script>
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+</body>
+
+</html>

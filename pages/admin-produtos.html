@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | ACALMA ADM</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1 class="site-brand">
+            <a class="site-brand__link" href="admin-dashbord.html" aria-label="ACALMA — painel administrativo">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+            <span class="site-brand__admin">ADM</span>
+        </h1><nav class="admin-nav"><a href="admin-clientes.html">Clientes</a><a href="admin-pedidos.html">Pedidos</a><a href="admin-trocas.html">Trocas</a><a href="admin-produtos.html" aria-current="page">Produtos</a><a href="admin-estoque.html">Estoque</a><a href="admin-cupons.html">Cupons</a><a href="admin-dashbord.html">Dashboard</a><a href="chatbot.html">Chatbot</a>
+            <a href="../index.html">Sair</a></nav></header>
+<main class="pagina-admin">
+    <section class="admin-titulo"><span class="eyebrow">Catálogo</span><h2>Gestão de produtos</h2><p>Cadastre, consulte, altere, ative ou inative itens do catálogo.</p></section>
+    <section class="admin-toolbar">
+        <label class="admin-campo admin-busca-flex">Buscar produto<input id="buscaProdutoAdmin" type="search" placeholder="Nome, código ou categoria"></label>
+        <label class="admin-campo">Status<select id="filtroStatusProduto"><option value="todos">Todos</option><option value="ativo">Ativos</option><option value="inativo">Inativos</option></select></label>
+        <button class="admin-botao-filtro" id="novoProduto" type="button">+ Novo produto</button>
+    </section>
+    <section class="admin-card">
+        <div class="tabela-responsiva"><table class="admin-tabela"><thead><tr><th>Código</th><th>Produto</th><th>Categoria</th><th>Preço</th><th>Estoque</th><th>Status</th><th>Ações</th></tr></thead><tbody id="tabelaProdutosAdmin"></tbody></table></div>
+        <p class="resultado-contagem" id="contagemProdutos"></p>
+    </section>
+</main>
+<dialog class="modal-admin" id="modalProduto">
+    <form method="dialog" id="formProduto">
+        <div class="modal-topo"><div><span class="eyebrow">Cadastro único</span><h2 id="tituloModalProduto">Novo produto</h2></div><button type="button" class="modal-fechar" data-fechar-produto aria-label="Fechar">×</button></div>
+        <input type="hidden" id="produtoId">
+        <div class="produto-modal-abas" id="produtoModalAbas" hidden>
+            <button type="button" class="produto-aba ativa" data-produto-aba="dados">Dados do produto</button>
+            <button type="button" class="produto-aba" data-produto-aba="estoque">Movimentação de estoque</button>
+        </div>
+        <div class="form-grid produto-painel ativo" data-produto-painel="dados">
+            <label>Nome<input id="produtoNome" required></label><label>Categoria<select id="produtoCategoria" required><option>Chás</option><option>Infusores</option><option>Canecas</option></select></label>
+            <label>Código<input id="produtoCodigo" required></label><label>Preço de custo<input id="produtoCusto" type="number" min="0.01" step="0.01" required></label>
+            <label>Grupo de precificação<select id="produtoGrupo"><option value="35">Padrão — 35%</option><option value="50">Premium — 50%</option><option value="25">Acessórios — 25%</option></select></label><label>Preço calculado<input id="produtoPreco" readonly></label>
+            <label id="campoEstoqueInicial">Quantidade inicial em estoque<input id="produtoEstoque" type="number" min="0" step="1" value="0" required></label>
+            <label class="form-largo">Descrição<textarea id="produtoDescricao" rows="3" required></textarea></label>
+        </div>
+        <section class="produto-painel produto-movimentacao" data-produto-painel="estoque">
+            <div class="produto-saldo"><span>Estoque atual</span><strong id="produtoEstoqueAtual">0 unidades</strong></div>
+            <div class="form-grid">
+                <label>Tipo de movimentação<select id="produtoMovimentoTipo"><option value="entrada">Entrada</option><option value="saida">Saída</option></select></label>
+                <label>Quantidade<input id="produtoMovimentoQuantidade" type="number" min="1" step="1"></label>
+                <label class="form-largo">Justificativa<textarea id="produtoMovimentoJustificativa" rows="3" placeholder="Informe o motivo da movimentação"></textarea></label>
+            </div>
+            <div class="modal-acoes"><button type="button" id="registrarMovimentoEstoque" class="admin-botao-filtro">Registrar movimentação</button></div>
+        </section>
+        <div class="modal-acoes" data-acoes-produto><button type="button" data-fechar-produto class="botao-secundario">Cancelar</button><button type="submit" value="default" class="admin-botao-filtro">Salvar produto</button></div>
+    </form>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../js/admin.js"></script>
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+</body></html>

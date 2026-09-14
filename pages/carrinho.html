@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -13,15 +14,20 @@
 
     <header>
 
-        <h1>ACALMA</h1>
+        <h1 class="site-brand">
+            <a class="site-brand__link" href="../index.html" aria-label="ACALMA — página inicial">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+        </h1>
 
         <nav>
-            <a href="index.html">Início</a>
+            <a href="../index.html">Início</a>
             <a href="produtos.html">Produtos</a>
-            <a href="#">Meus pedidos</a>
-            <a href="#">Cupons</a>
-            <a href="#">Minha conta</a>
+            <a href="meus-pedidos.html">Meus pedidos</a>
+            <a href="cupons.html">Cupons</a>
+            <a href="minha-conta.html">Minha conta</a>
             <a href="carrinho.html">Carrinho</a>
+            <a href="cadastro.html">Cadastre-se</a>
         </nav>
 
     </header>
@@ -76,7 +82,7 @@
                     <span>Frete</span>
 
                     <span>
-                        Grátis
+                        A calcular
                     </span>
 
                 </div>
@@ -95,10 +101,10 @@
 
                 <button
                     type="button"
-                    id="botao-finalizar"
-                    class="botao-finalizar"
+                    id="botao-seguir"
+                    class="botao-seguir"
                 >
-                    Finalizar compra
+                    Seguir com a compra
                 </button>
 
             </aside>
@@ -127,10 +133,10 @@
 
                 <h3>Navegação</h3>
 
-                <a href="index.html">Início</a>
+                <a href="../index.html">Início</a>
                 <a href="produtos.html">Produtos</a>
-                <a href="#">Meus pedidos</a>
-                <a href="#">Minha conta</a>
+                <a href="meus-pedidos.html">Meus pedidos</a>
+                <a href="minha-conta.html">Minha conta</a>
 
             </div>
 
@@ -160,6 +166,8 @@
 
     <script src="../js/script.js"></script>
 
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+    <script src="../js/cart-badge.js"></script>
 </body>
 
 </html>

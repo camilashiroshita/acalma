@@ -2,21 +2,27 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>ACALMA</title>
 </head>
 <body>
     <header>
 
-        <h1>ACALMA</h1>
+        <h1 class="site-brand">
+            <a class="site-brand__link" href="../index.html" aria-label="ACALMA — página inicial">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+        </h1>
 
         <nav>
-            <a href="index.html">Início</a>
+            <a href="../index.html">Início</a>
             <a href="produtos.html">Produtos</a>
-            <a href="#">Meus pedidos</a>
-            <a href="#">Cupons</a>
-            <a href="#">Minha conta</a>
-            <a href="#">Carrinho</a>
+            <a href="meus-pedidos.html">Meus pedidos</a>
+            <a href="cupons.html">Cupons</a>
+            <a href="minha-conta.html">Minha conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="cadastro.html">Cadastre-se</a>
         </nav>
 
     </header>
@@ -27,6 +33,14 @@
             <h2>Nossos produtos</h2>
             <p>Encontre chás e acessórios para deixar seus momentos mais leves.</p>
         </div>
+
+        <form class="busca-catalogo" id="buscaCatalogo" role="search">
+            <label for="buscaProdutoCatalogo">Buscar produto</label>
+            <div class="busca-catalogo__controle">
+                <input id="buscaProdutoCatalogo" type="search" placeholder="Nome, categoria ou descrição">
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
 
         <div class="catalogo-filtros">
             <button type="button" class="filtro ativo" data-filtro="todos">
@@ -51,7 +65,7 @@
             <article class="produto-card" data-categoria="chas">
 
                 <img
-                    src="images/cha-camomila.png"
+                    src="../images/cha-camomila.png"
                     alt="Sachê de chá de camomila"
                 >
 
@@ -76,7 +90,7 @@
             <article class="produto-card" data-categoria="chas">
 
                 <img
-                    src="images/cha-hibisco.png"
+                    src="../images/cha-hibisco.png"
                     alt="Sachê de chá de hibisco"
                 >
 
@@ -101,7 +115,7 @@
             <article class="produto-card" data-categoria="infusores">
 
                 <img
-                    src="images/infusor-inox.png"
+                    src="../images/infusor-inox.png"
                     alt="Infusor de chá em aço inox"
                 >
 
@@ -126,7 +140,7 @@
             <article class="produto-card" data-categoria="infusores">
 
                 <img
-                    src="images/infusor-folha.png"
+                    src="../images/infusor-folha.png"
                     alt="Infusor de chá verde em formato de folha"
                 >
 
@@ -162,10 +176,10 @@
 
             <div class="footer-links">
                 <h3>Navegação</h3>
-                <a href="#">Início</a>
-                <a href="#">Produtos</a>
-                <a href="#">Meus pedidos</a>
-                <a href="#">Minha conta</a>
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="meus-pedidos.html">Meus pedidos</a>
+                <a href="minha-conta.html">Minha conta</a>
             </div>
 
             <div class="footer-atendimento">
@@ -181,6 +195,8 @@
         </div>
     </footer>  
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+    <script src="../js/cart-badge.js"></script>
 </body>
 </html>

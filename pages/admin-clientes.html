@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administração de clientes | ACALMA</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="site-brand">
+            <a class="site-brand__link" href="admin-dashbord.html" aria-label="ACALMA — painel administrativo">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+            <span class="site-brand__admin">ADM</span>
+        </h1>
+
+        <nav>
+            <a href="admin-clientes.html" aria-current="page">Clientes</a>
+            <a href="admin-pedidos.html">Pedidos</a>
+            <a href="admin-trocas.html">Trocas</a>
+            <a href="admin-produtos.html">Produtos</a>
+            <a href="admin-estoque.html">Estoque</a>
+            <a href="admin-cupons.html">Cupons</a>
+            <a href="admin-dashbord.html">Dashboard</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="../index.html">Sair</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-admin">
+
+        <section class="admin-titulo">
+
+            <h2>Consulta de clientes</h2>
+
+            <p>
+                Pesquise clientes cadastrados e consulte suas principais informações.
+            </p>
+
+        </section>
+
+
+        <!-- FILTROS -->
+
+        <section class="admin-filtros">
+
+            <div class="admin-campo">
+
+                <label for="clienteBusca">
+                    Buscar cliente
+                </label>
+
+                <input
+                    type="text"
+                    id="clienteBusca"
+                    placeholder="Nome, CPF ou e-mail"
+                >
+
+            </div>
+
+
+            <div class="admin-campo">
+
+                <label for="statusCliente">
+                    Status da conta
+                </label>
+
+                <select id="statusCliente">
+
+                    <option>Todos</option>
+                    <option>ATIVA</option>
+                    <option>INATIVA</option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="admin-botao-filtro"
+            >
+                Filtrar
+            </button>
+
+        </section>
+
+
+        <!-- CLIENTE 1 -->
+
+        <section class="admin-cliente-card">
+
+            <div class="admin-cliente-topo">
+
+                <div>
+
+                    <span class="admin-cliente-nome">
+                        Fulana Costa
+                    </span>
+
+                    <p>
+                        Cliente #0001
+                    </p>
+
+                </div>
+
+
+                <span class="admin-status status-cliente-ativo">
+                    ATIVA
+                </span>
+
+            </div>
+
+
+            <div class="admin-cliente-conteudo">
+
+                <div class="admin-cliente-dados">
+
+                    <div>
+
+                        <span>E-mail</span>
+
+                        <strong>
+                            fulana@email.com
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Telefone</span>
+
+                        <strong>
+                            (16) 99999-9999
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>CPF</span>
+
+                        <strong>
+                            123.***.***-00
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Data de cadastro</span>
+
+                        <strong>
+                            10/08/2026
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-cliente-resumo">
+
+                    <div>
+
+                        <span>Pedidos realizados</span>
+
+                        <strong>
+                            4
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Total comprado</span>
+
+                        <strong>
+                            R$ 248,60
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="admin-botao-detalhes"
+                    >
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLIENTE 2 -->
+
+        <section class="admin-cliente-card">
+
+            <div class="admin-cliente-topo">
+
+                <div>
+
+                    <span class="admin-cliente-nome">
+                        Beltrano Mendes
+                    </span>
+
+                    <p>
+                        Cliente #0002
+                    </p>
+
+                </div>
+
+
+                <span class="admin-status status-cliente-ativo">
+                    ATIVA
+                </span>
+
+            </div>
+
+
+            <div class="admin-cliente-conteudo">
+
+                <div class="admin-cliente-dados">
+
+                    <div>
+
+                        <span>E-mail</span>
+
+                        <strong>
+                            beltrano@email.com
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Telefone</span>
+
+                        <strong>
+                            (16) 98888-1234
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>CPF</span>
+
+                        <strong>
+                            456.***.***-21
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Data de cadastro</span>
+
+                        <strong>
+                            18/08/2026
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-cliente-resumo">
+
+                    <div>
+
+                        <span>Pedidos realizados</span>
+
+                        <strong>
+                            2
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Total comprado</span>
+
+                        <strong>
+                            R$ 89,70
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="admin-botao-detalhes"
+                    >
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLIENTE 3 -->
+
+        <section class="admin-cliente-card">
+
+            <div class="admin-cliente-topo">
+
+                <div>
+
+                    <span class="admin-cliente-nome">
+                        Ciclano Alves
+                    </span>
+
+                    <p>
+                        Cliente #0003
+                    </p>
+
+                </div>
+
+
+                <span class="admin-status status-cliente-inativo">
+                    INATIVA
+                </span>
+
+            </div>
+
+
+            <div class="admin-cliente-conteudo">
+
+                <div class="admin-cliente-dados">
+
+                    <div>
+
+                        <span>E-mail</span>
+
+                        <strong>
+                            ciclano@email.com
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Telefone</span>
+
+                        <strong>
+                            (16) 97777-9876
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>CPF</span>
+
+                        <strong>
+                            789.***.***-45
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Data de cadastro</span>
+
+                        <strong>
+                            05/08/2026
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-cliente-resumo">
+
+                    <div>
+
+                        <span>Pedidos realizados</span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Total comprado</span>
+
+                        <strong>
+                            R$ 37,80
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="admin-botao-detalhes"
+                    >
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div class="footer-marca">
+
+                <h2>ACALMA ADM</h2>
+
+                <p>
+                    Área administrativa do sistema.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Administração</h3>
+
+                <a href="admin-dashbord.html">Dashboard</a>
+                <a href="admin-produtos.html">Produtos</a>
+                <a href="admin-estoque.html">Estoque</a>
+                <a href="admin-clientes.html">Clientes</a>
+                <a href="admin-pedidos.html">Pedidos</a>
+
+            </div>
+
+
+            <div class="footer-atendimento">
+
+                <h3>Sistema</h3>
+
+                <p>
+                    Ambiente administrativo
+                </p>
+
+                <p>
+                    Acesso restrito
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-final">
+
+            <p>
+                &copy; 2026 ACALMA — Administração.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+</body>
+
+</html>

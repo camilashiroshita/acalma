@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Trocas | ACALMA ADM</title><link rel="stylesheet" href="../css/style.css"></head>
+<body>
+<header><h1 class="site-brand"><a class="site-brand__link" href="admin-dashbord.html" aria-label="ACALMA — painel administrativo"><img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024"></a><span class="site-brand__admin">ADM</span></h1><nav class="admin-nav"><a href="admin-clientes.html">Clientes</a><a href="admin-pedidos.html">Pedidos</a><a href="admin-trocas.html" aria-current="page">Trocas</a><a href="admin-produtos.html">Produtos</a><a href="admin-estoque.html">Estoque</a><a href="admin-cupons.html">Cupons</a><a href="admin-dashbord.html">Dashboard</a><a href="chatbot.html">Chatbot</a><a href="../index.html">Sair</a></nav></header>
+<main class="pagina-admin pagina-trocas-admin">
+ <section class="admin-titulo troca-page-title"><div><span class="eyebrow">Pós-venda</span><h2>Gerenciamento de trocas</h2><p>Acompanhe cada solicitação do aceite até a conclusão e geração do crédito.</p></div><div class="troca-resumo" id="trocaResumo"></div></section>
+ <section class="admin-toolbar troca-filtros"><label class="admin-campo admin-busca-flex">Pesquisar<input id="buscaTroca" type="search" placeholder="Pedido, cliente, item ou motivo"></label><label class="admin-campo">Status<select id="filtroTroca"><option value="todos">Todos</option><option>TROCA SOLICITADA</option><option>TROCA ACEITA</option><option>ITEM ENVIADO</option><option>ITEM RECEBIDO</option><option>TROCA PROCESSADA</option><option>TROCA NEGADA</option></select></label></section>
+ <section id="listaTrocas" class="troca-admin-list" aria-live="polite"></section>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../js/admin-trocas.js"></script>
+<a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+</body></html>

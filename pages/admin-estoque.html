@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Estoque | ACALMA ADM</title><link rel="stylesheet" href="../css/style.css"></head>
+<body>
+<header><h1 class="site-brand">
+            <a class="site-brand__link" href="admin-dashbord.html" aria-label="ACALMA — painel administrativo">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+            <span class="site-brand__admin">ADM</span>
+        </h1><nav class="admin-nav"><a href="admin-clientes.html">Clientes</a><a href="admin-pedidos.html">Pedidos</a><a href="admin-trocas.html">Trocas</a><a href="admin-produtos.html">Produtos</a><a href="admin-estoque.html" aria-current="page">Estoque</a><a href="admin-cupons.html">Cupons</a><a href="admin-dashbord.html">Dashboard</a><a href="chatbot.html">Chatbot</a>
+            <a href="../index.html">Sair</a></nav></header>
+<main class="pagina-admin">
+    <section class="admin-titulo"><span class="eyebrow">Controle operacional</span><h2>Entradas de estoque</h2><p>Registre lotes, fornecedores, custos e acompanhe produtos com estoque baixo.</p></section>
+    <section class="dashboard-indicadores"><article class="dashboard-card-indicador"><span>Itens disponíveis</span><strong id="totalEstoque">49</strong><p>Em todos os produtos</p></article><article class="dashboard-card-indicador alerta"><span>Estoque baixo</span><strong id="estoqueBaixo">1</strong><p>Abaixo de 5 unidades</p></article><article class="dashboard-card-indicador"><span>Entradas no mês</span><strong id="entradasMes">36</strong><p>Agosto de 2026</p></article></section>
+    <section class="admin-grade-2">
+        <form class="admin-card form-estoque" id="formEstoque"><h3>Registrar entrada</h3><p>Todos os campos são obrigatórios.</p><label>Produto<select id="estoqueProduto" required></select></label><label>Quantidade<input id="estoqueQuantidade" type="number" min="1" required></label><label>Valor de custo (R$)<input id="estoqueCusto" type="number" min="0.01" step="0.01" required></label><label>Fornecedor<input id="estoqueFornecedor" required placeholder="Nome do fornecedor"></label><label>Data de entrada<input id="estoqueData" type="date" required></label><button class="admin-botao-filtro" type="submit">Registrar entrada</button></form>
+        <section class="admin-card"><div class="dashboard-card-topo"><div><h3>Posição atual</h3><p>Estoque consolidado por produto.</p></div></div><div id="listaEstoque" class="estoque-lista"></div></section>
+    </section>
+    <section class="admin-card"><div class="dashboard-card-topo"><div><h3>Histórico de movimentações</h3><p>Últimas entradas registradas neste navegador.</p></div></div><div class="tabela-responsiva"><table class="admin-tabela"><thead><tr><th>Data</th><th>Produto</th><th>Fornecedor</th><th>Quantidade</th><th>Custo</th></tr></thead><tbody id="historicoEstoque"></tbody></table></div></section>
+</main><div class="toast" id="toast" role="status" aria-live="polite"></div><script src="../js/admin.js"></script>    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+</body></html>

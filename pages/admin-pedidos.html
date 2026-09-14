@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administração de pedidos | ACALMA</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="site-brand">
+            <a class="site-brand__link" href="admin-dashbord.html" aria-label="ACALMA — painel administrativo">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+            <span class="site-brand__admin">ADM</span>
+        </h1>
+
+        <nav>
+            <a href="admin-clientes.html">Clientes</a>
+            <a href="admin-pedidos.html" aria-current="page">Pedidos</a>
+            <a href="admin-trocas.html">Trocas</a>
+            <a href="admin-produtos.html">Produtos</a>
+            <a href="admin-estoque.html">Estoque</a>
+            <a href="admin-cupons.html">Cupons</a>
+            <a href="admin-dashbord.html">Dashboard</a>
+            <a href="chatbot.html">Chatbot</a>
+            <a href="../index.html">Sair</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-admin">
+
+        <section class="admin-titulo">
+
+            <h2>Gerenciamento de pedidos</h2>
+
+            <p>
+                Consulte os pedidos realizados e acompanhe
+                a evolução dos status.
+            </p>
+
+        </section>
+
+
+        <!-- FILTROS -->
+
+        <section class="admin-filtros">
+
+            <div class="admin-campo">
+
+                <label for="pedidoBusca">
+                    Buscar pedido
+                </label>
+
+                <input
+                    type="text"
+                    id="pedidoBusca"
+                    placeholder="Número do pedido ou cliente"
+                >
+
+            </div>
+
+
+            <div class="admin-campo">
+
+                <label for="statusPedido">
+                    Status
+                </label>
+
+                <select id="statusPedido">
+
+                    <option>Todos</option>
+                    <option>EM ABERTO</option>
+                    <option>EM PROCESSAMENTO</option>
+                    <option>APROVADA</option>
+                    <option>EM TRANSPORTE</option>
+                    <option>ENTREGUE</option>
+
+                </select>
+
+            </div>
+
+
+            <button type="button" class="admin-botao-filtro">
+                Filtrar
+            </button>
+
+        </section>
+
+
+
+        <!-- PEDIDO 1 -->
+
+        <section class="admin-pedido-card">
+
+            <div class="admin-pedido-topo">
+
+                <div>
+
+                    <span class="admin-pedido-numero">
+                        Pedido #1048
+                    </span>
+
+                    <p>
+                        Cliente: Camila Shiroshita
+                    </p>
+
+                    <p>
+                        Data: 22/08/2026
+                    </p>
+
+                </div>
+
+
+                <span class="admin-status status-admin-transito">
+                    EM TRANSPORTE
+                </span>
+
+            </div>
+
+
+            <div class="admin-pedido-conteudo">
+
+                <div>
+
+                    <h3>Resumo do pedido</h3>
+
+                    <p>
+                        2x Chá de Hibisco
+                    </p>
+
+                    <p>
+                        1x Infusor Inox
+                    </p>
+
+                    <strong>
+                        Total: R$ 66,33
+                    </strong>
+
+                </div>
+
+
+                <div class="admin-alterar-status">
+
+                    <label>
+                        Alterar status
+                    </label>
+
+                    <select>
+
+                        <option>
+                            EM TRANSPORTE
+                        </option>
+
+                        <option>
+                            ENTREGUE
+                        </option>
+
+                    </select>
+
+
+                    <button type="button">
+                        Atualizar status
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PEDIDO 2 -->
+
+        <section class="admin-pedido-card">
+
+            <div class="admin-pedido-topo">
+
+                <div>
+
+                    <span class="admin-pedido-numero">
+                        Pedido #1051
+                    </span>
+
+                    <p>
+                        Cliente: Lucas Almeida
+                    </p>
+
+                    <p>
+                        Data: 24/08/2026
+                    </p>
+
+                </div>
+
+
+                <span class="admin-status status-admin-aberto">
+                    EM ABERTO
+                </span>
+
+            </div>
+
+
+            <div class="admin-pedido-conteudo">
+
+                <div>
+
+                    <h3>Resumo do pedido</h3>
+
+                    <p>
+                        1x Chá de Camomila
+                    </p>
+
+                    <p>
+                        1x Infusor Folha
+                    </p>
+
+                    <strong>
+                        Total: R$ 43,80
+                    </strong>
+
+                </div>
+
+
+                <div class="admin-alterar-status">
+
+                    <label>
+                        Alterar status
+                    </label>
+
+                    <select>
+
+                        <option>
+                            EM ABERTO
+                        </option>
+
+                        <option>
+                            EM PROCESSAMENTO
+                        </option>
+
+                    </select>
+
+
+                    <button type="button">
+                        Atualizar status
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PEDIDO 3 -->
+
+        <section class="admin-pedido-card">
+
+            <div class="admin-pedido-topo">
+
+                <div>
+
+                    <span class="admin-pedido-numero">
+                        Pedido #1049
+                    </span>
+
+                    <p>
+                        Cliente: Mariana Costa
+                    </p>
+
+                    <p>
+                        Data: 23/08/2026
+                    </p>
+
+                </div>
+
+
+                <span class="admin-status status-admin-pagamento">
+                    APROVADA
+                </span>
+
+            </div>
+
+
+            <div class="admin-pedido-conteudo">
+
+                <div>
+
+                    <h3>Resumo do pedido</h3>
+
+                    <p>
+                        2x Chá de Camomila
+                    </p>
+
+                    <strong>
+                        Total: R$ 37,80
+                    </strong>
+
+                </div>
+
+
+                <div class="admin-alterar-status">
+
+                    <label>
+                        Alterar status
+                    </label>
+
+                    <select>
+
+                        <option>
+                            APROVADA
+                        </option>
+
+                        <option>
+                            EM TRANSPORTE
+                        </option>
+
+                    </select>
+
+
+                    <button type="button">
+                        Atualizar status
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PEDIDO 4 -->
+
+<section class="admin-pedido-card">
+
+    <div class="admin-pedido-topo">
+
+        <div>
+
+            <span class="admin-pedido-numero">
+                Pedido #1050
+            </span>
+
+            <p>
+                Cliente: Beatriz Oliveira
+            </p>
+
+            <p>
+                Data: 24/08/2026
+            </p>
+
+        </div>
+
+        <span class="admin-status status-admin-processamento">
+            EM PROCESSAMENTO
+        </span>
+
+    </div>
+
+
+    <div class="admin-pedido-conteudo">
+
+        <div>
+
+            <h3>Resumo do pedido</h3>
+
+            <p>
+                1x Chá de Hibisco
+            </p>
+
+            <strong>
+                Total: R$ 21,90
+            </strong>
+
+        </div>
+
+
+        <div class="admin-alterar-status">
+
+            <label>
+                Alterar status
+            </label>
+
+            <select>
+
+                <option>
+                    EM PROCESSAMENTO
+                </option>
+
+                <option>
+                    APROVADA
+                </option>
+
+            </select>
+
+            <button type="button">
+                Atualizar status
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- TROCAS -->
+
+        <section class="admin-trocas">
+
+            <div class="admin-secao-topo">
+
+                <h2>Solicitações de troca</h2>
+
+                <p>
+                    Gerencie o fluxo de troca dos itens enviados pelos clientes.
+                </p>
+
+            </div>
+
+
+            <!-- TROCA 1 -->
+
+            <article class="admin-troca-card">
+
+                <div>
+
+                    <span class="admin-pedido-numero">
+                        Pedido #1039
+                    </span>
+
+                    <p>
+                        Cliente: Fulana Costa
+                    </p>
+
+                    <p>
+                        Item: Chá de Hibisco
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span class="admin-status status-troca-solicitada">
+                        TROCA SOLICITADA
+                    </span>
+
+                </div>
+
+
+                <div class="admin-troca-acoes">
+
+                    <button
+                        type="button"
+                        class="admin-botao-aceitar"
+                    >
+                        Aceitar troca
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="admin-botao-negar"
+                    >
+                        Negar troca
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- TROCA 2 -->
+
+            <article class="admin-troca-card">
+
+                <div>
+
+                    <span class="admin-pedido-numero">
+                        Pedido #1036
+                    </span>
+
+                    <p>
+                        Cliente: Beltrano Mendes
+                    </p>
+
+                    <p>
+                        Item: Infusor Inox
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span class="admin-status status-item-enviado">
+                        ITEM ENVIADO
+                    </span>
+
+                </div>
+
+
+                <div class="admin-troca-acoes">
+
+                    <button
+                        type="button"
+                        class="admin-botao-status"
+                    >
+                        Marcar como ITEM RECEBIDO
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- TROCA 3 -->
+
+            <article class="admin-troca-card">
+
+                <div>
+
+                    <span class="admin-pedido-numero">
+                        Pedido #1032
+                    </span>
+
+                    <p>
+                        Cliente: Ciclano Alves
+                    </p>
+
+                    <p>
+                        Item: Chá de Camomila
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span class="admin-status status-item-recebido">
+                        ITEM RECEBIDO
+                    </span>
+
+                </div>
+
+
+                <div class="admin-troca-acoes">
+
+                    <button
+                        type="button"
+                        class="admin-botao-status"
+                    >
+                        Processar troca
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div class="footer-marca">
+
+                <h2>ACALMA ADM</h2>
+
+                <p>
+                    Área administrativa do sistema.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Administração</h3>
+
+                <a href="admin-dashbord.html">Dashboard</a>
+                <a href="admin-produtos.html">Produtos</a>
+                <a href="admin-estoque.html">Estoque</a>
+                <a href="admin-clientes.html">Clientes</a>
+                <a href="admin-pedidos.html">Pedidos</a>
+
+            </div>
+
+
+            <div class="footer-atendimento">
+
+                <h3>Sistema</h3>
+
+                <p>
+                    Ambiente administrativo
+                </p>
+
+                <p>
+                    Acesso restrito
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-final">
+
+            <p>
+                &copy; 2026 ACALMA — Administração.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+</body>
+
+</html>

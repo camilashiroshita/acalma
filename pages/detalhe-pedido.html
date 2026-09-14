@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Detalhes do pedido | ACALMA</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="site-brand">
+            <a class="site-brand__link" href="../index.html" aria-label="ACALMA — página inicial">
+                <img class="site-brand__image" src="../images/ACALMA_logotipo_proposta_01.png" alt="ACALMA" width="1536" height="1024">
+            </a>
+        </h1>
+
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="meus-pedidos.html">Meus pedidos</a>
+            <a href="cupons.html">Cupons</a>
+            <a href="minha-conta.html">Minha conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="cadastro.html">Cadastre-se</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-detalhe-pedido">
+
+        <section class="detalhe-pedido-titulo">
+
+            <div>
+
+                <a href="meus-pedidos.html" class="voltar-pedidos">
+                    ← Voltar para meus pedidos
+                </a>
+
+                <h2>Pedido #1048</h2>
+
+                <p>
+                    Realizado em 22/08/2026
+                </p>
+
+            </div>
+
+
+            <span class="pedido-status status-transito">
+                ENTREGUE
+            </span>
+
+        </section>
+
+
+        <!-- HISTÓRICO DO PEDIDO -->
+
+        <section class="detalhe-card">
+
+            <div class="detalhe-card-topo">
+
+                <span class="detalhe-etapa">01</span>
+
+                <h3>Acompanhamento do pedido</h3>
+
+            </div>
+
+
+            <div class="linha-status-pedido">
+
+                <div class="status-etapa concluido">
+
+                    <span class="status-circulo">✓</span>
+
+                    <div>
+                        <strong>EM ABERTO</strong>
+                        <p>22/08/2026 - 10:15</p>
+                    </div>
+
+                </div>
+
+
+                <div class="status-linha concluida"></div>
+
+
+                <div class="status-etapa concluido">
+
+                    <span class="status-circulo">✓</span>
+
+                    <div>
+                        <strong>EM PROCESSAMENTO</strong>
+                        <p>22/08/2026 - 11:30</p>
+                    </div>
+
+                </div>
+
+
+                <div class="status-linha concluida"></div>
+
+
+                <div class="status-etapa concluido">
+
+                    <span class="status-circulo">✓</span>
+
+                    <div>
+                        <strong>APROVADA</strong>
+                        <p>22/08/2026 - 12:10</p>
+                    </div>
+
+                </div>
+
+
+                <div class="status-linha concluida"></div>
+
+                <div class="status-etapa concluido">
+
+                    <span class="status-circulo">✓</span>
+
+                    <div>
+                        <strong>EM TRANSPORTE</strong>
+                        <p>23/08/2026 - 09:20</p>
+                    </div>
+
+                </div>
+
+
+                <div class="status-linha concluida"></div>
+
+
+                <div class="status-etapa atual">
+
+                    <span class="status-circulo">✓</span>
+
+                    <div>
+                        <strong>ENTREGUE</strong>
+                        <p>23/08/2026 - 15:40</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="detalhe-pedido-grade">
+
+
+            <!-- ITENS DO PEDIDO -->
+
+            <section class="detalhe-card detalhe-itens">
+
+                <div class="detalhe-card-topo">
+
+                    <span class="detalhe-etapa">02</span>
+
+                    <h3>Itens do pedido</h3>
+
+                </div>
+
+
+                <article class="detalhe-item-produto">
+
+                    <div class="detalhe-item-info">
+
+                        <img
+                            src="../images/cha-hibisco.png"
+                            alt="Chá de Hibisco"
+                        >
+
+                        <div>
+
+                            <strong>
+                                Chá de Hibisco
+                            </strong>
+
+                            <p>
+                                Quantidade: 2
+                            </p>
+
+                            <span>
+                                R$ 21,90 cada
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detalhe-item-acoes">
+
+                        <strong>
+                            R$ 43,80
+                        </strong>
+
+                        <button
+                            type="button"
+                            class="botao-troca"
+                        >
+                            Solicitar troca
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="detalhe-item-produto">
+
+                    <div class="detalhe-item-info">
+
+                        <img
+                            src="../images/infusor-inox.png"
+                            alt="Infusor Inox"
+                        >
+
+                        <div>
+
+                            <strong>
+                                Infusor Inox
+                            </strong>
+
+                            <p>
+                                Quantidade: 1
+                            </p>
+
+                            <span>
+                                R$ 29,90 cada
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detalhe-item-acoes">
+
+                        <strong>
+                            R$ 29,90
+                        </strong>
+
+                        <button
+                            type="button"
+                            class="botao-troca"
+                        >
+                            Solicitar troca
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- RESUMO -->
+
+            <aside class="detalhe-card detalhe-resumo">
+
+                <div class="detalhe-card-topo">
+
+                    <span class="detalhe-etapa">03</span>
+
+                    <h3>Resumo</h3>
+
+                </div>
+
+
+                <div class="detalhe-resumo-linha">
+
+                    <span>Subtotal</span>
+
+                    <strong>
+                        R$ 73,70
+                    </strong>
+
+                </div>
+
+
+                <div class="detalhe-resumo-linha">
+
+                    <span>Frete</span>
+
+                    <strong>
+                        Grátis
+                    </strong>
+
+                </div>
+
+
+                <div class="detalhe-resumo-linha desconto">
+
+                    <span>Cupom ACALMA10</span>
+
+                    <strong>
+                        - R$ 7,37
+                    </strong>
+
+                </div>
+
+
+                <div class="detalhe-resumo-total">
+
+                    <span>Total</span>
+
+                    <strong>
+                        R$ 66,33
+                    </strong>
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- ENDEREÇO -->
+
+            <section class="detalhe-card">
+
+                <div class="detalhe-card-topo">
+
+                    <span class="detalhe-etapa">04</span>
+
+                    <h3>Endereço de entrega</h3>
+
+                </div>
+
+
+                <div class="detalhe-endereco">
+
+                    <strong>Casa</strong>
+
+                    <p>
+                        Rua das Flores, 125
+                    </p>
+
+                    <p>
+                        Jardim Primavera
+                    </p>
+
+                    <p>
+                        São Carlos/SP — CEP 13560-000
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- PAGAMENTO -->
+
+            <section class="detalhe-card">
+
+                <div class="detalhe-card-topo">
+
+                    <span class="detalhe-etapa">05</span>
+
+                    <h3>Pagamento</h3>
+
+                </div>
+
+
+                <div class="detalhe-pagamento">
+
+                    <div>
+
+                        <span class="conta-bandeira">
+                            VISA
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                •••• •••• •••• 4587
+                            </strong>
+
+                            <p>
+                                Valor utilizado: R$ 40,00
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="conta-bandeira">
+                            MASTER
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                •••• •••• •••• 7812
+                            </strong>
+
+                            <p>
+                                Valor utilizado: R$ 26,33
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="detalhe-cupom">
+
+                        <strong>
+                            Cupom utilizado: ACALMA10
+                        </strong>
+
+                        <span>
+                            Desconto de R$ 7,37
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- TROCA / DESPACHO -->
+
+            <section class="detalhe-card conta-card-largo">
+
+                <div class="detalhe-card-topo">
+
+                    <span class="detalhe-etapa">06</span>
+
+                    <h3>Troca de item</h3>
+
+                </div>
+
+
+                <div class="troca-prototipo">
+
+                    <div>
+
+                        <strong>
+                            Chá de Hibisco
+                        </strong>
+
+                        <p>
+                            Status da troca:
+                            <span class="troca-status">
+                                TROCA SOLICITADA
+                            </span>
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="botao-despacho"
+                    >
+                        Informar despacho do item
+                    </button>
+
+                </div>
+
+
+                <div class="troca-orientacao">
+
+                    <strong>
+                        Próxima etapa
+                    </strong>
+
+                    <p>
+                        Após a troca ser aceita, informe o despacho do item enviado
+                        para devolução.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <section class="detalhe-acoes-finais">
+
+            <button
+                type="button"
+                class="pedido-botao-cancelar"
+            >
+                Cancelar pedido
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-conteudo">
+
+            <div class="footer-marca">
+
+                <h2>ACALMA</h2>
+
+                <p>
+                    Chás e acessórios para tornar sua rotina mais leve.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Navegação</h3>
+
+                <a href="../index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="meus-pedidos.html">Meus pedidos</a>
+                <a href="minha-conta.html">Minha conta</a>
+
+            </div>
+
+
+            <div class="footer-atendimento">
+
+                <h3>Atendimento</h3>
+
+                <p>Segunda a sexta-feira</p>
+                <p>Das 9h às 18h</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-final">
+
+            <p>
+                &copy; 2026 ACALMA — Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <a class="atalho-chat" href="chatbot.html" aria-label="Abrir assistente de recomendações" title="Abrir chatbot"><span aria-hidden="true">✦</span><span class="atalho-chat__texto">Chatbot</span></a>
+    <script src="../js/cart-badge.js"></script>
+</body>
+
+</html>
